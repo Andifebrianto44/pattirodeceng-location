@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------
 
 const account = {
-  displayName: 'Lurah Rappang',
-  email: 'rappang@gmail.com',
+  displayName: 'Admin Pattirodeceng',
+  email: 'pattirodeceng@gmail.com',
   photoURL: '/assets/images/avatars/avatar_default.jpg',
 };
 

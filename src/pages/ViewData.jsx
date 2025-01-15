@@ -26,8 +26,20 @@ const ViewData = () => {
   };
 
   const onLocation = () => {
-    console.log('onLocation');
-    window.location.href = `https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`;
+    const appleMapsUrl = `https://maps.apple.com/?q=${data.latitude},${data.longitude}`;
+
+    const isAppleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    if (isAppleDevice) {
+      // Buka Apple Maps
+      window.location.href = appleMapsUrl;
+    } else {
+      // Buka Google Maps
+      window.location.href = googleMapsUrl;
+    }
+    // console.log('onLocation');
+    // window.location.href = `https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`
     // navigator.geolocation.getCurrentPosition(
     //   (position) => {
     //     const lat = position.coords.latitude;
@@ -44,8 +56,8 @@ const ViewData = () => {
   };
 
   const onHubungi = () => {
-    window.location.href = `tel: +62${data.noHp}`
-  }
+    window.location.href = `tel: +62${data.noHp}`;
+  };
 
   return (
     <Box
