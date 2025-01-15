@@ -2,13 +2,13 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyC5IxO-cElLnCS9OMKbO6hrQ7zYsd-W_wQ',
-  authDomain: 'rappang-location-ab5d6.firebaseapp.com',
-  projectId: 'rappang-location-ab5d6',
-  storageBucket: 'rappang-location-ab5d6.appspot.com',
-  messagingSenderId: '926262437983',
-  appId: '1:926262437983:web:0cadb5b6f9142bf14a93ea',
-  measurementId: 'G-FBHS9SQEVX',
+  apiKey: 'AIzaSyD2bccyqmJ3ReCVYrJpsvgOpFrNfUWXk3c',
+  authDomain: 'pattirodeceng-location.firebaseapp.com',
+  projectId: 'pattirodeceng-location',
+  storageBucket: 'pattirodeceng-location.firebasestorage.app',
+  messagingSenderId: '24656038586',
+  appId: '1:24656038586:web:f0377d271b3c4400519083',
+  measurementId: 'G-75N0ELNHSB',
 };
 
 // Initialize Firebase
